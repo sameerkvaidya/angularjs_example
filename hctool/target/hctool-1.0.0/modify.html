@@ -1,0 +1,67 @@
+<h2>Update</h2>
+<form name="form" class="form-horizontal">
+    <div class="control-group" ng-class="{error: form.Env.$invalid}">
+        <label class="control-label" for="Id">ID</label>
+        <div class="controls">
+            <input type="text" ng-model="item.id" id="Id" readonly="true">
+        </div>
+    </div>
+
+    <div class="control-group" ng-class="{error: form.Env.$invalid}">
+        <label class="control-label" for="Env">Environment</label>
+        <div class="controls">
+            <input type="text" ng-model="item.name" id="Env">
+        </div>
+    </div>
+
+    <div class="control-group" ng-class="{error: form.Env.$invalid}">
+
+        <label class="control-label" for="Env">User</label>
+        <div class="controls">
+            <input type="text" ng-model="item.user" id="User">
+        </div>
+    </div>
+
+    <div class="control-group" ng-class="{error: form.Env.$invalid}">
+        <label class="control-label" for="Desc">Description</label>
+        <div class="controls">
+            <input type="text" ng-model="item.desc" id="Desc">
+        </div>
+    </div>    
+
+    <div class="control-group" ng-class="{error: form.Env.$invalid}">
+        <label class="control-label" for="Cre">Created</label>
+        <div class="controls">
+            <input type="text" ng-model="item.created" id="Cre" readonly="true">
+        </div>
+    </div>
+
+    <div class="control-group" ng-class="{error: form.Env.$invalid}">
+        <label class="control-label" for="Up">Updated</label>
+        <div class="controls">
+            <input type="text" ng-model="item.updated" id="Up" readonly="true">
+        </div>
+    </div>
+
+    <div class="control-group" ng-class="{error: form.Env.$invalid}">
+        <label class="control-label" for="Url">Url</label>
+        <div class="controls">
+            <input type="text" ng-model="item.url" id="Url">
+        </div>
+    </div>
+
+    <div class="control-group" ng-class="{error: form.Env.$invalid}">
+        <label class="control-label" for="Type">Type</label>
+        <div class="controls">
+            <input type="text" ng-model="item.type" id="Type">
+        </div>
+    </div>
+
+    <div class="form-actions">
+        <button class="btn btn-primary" ng-click="save()">
+            Submit
+        </button>
+        <a href="#/" class="btn">Cancel</a>
+    </div>
+</form>
+

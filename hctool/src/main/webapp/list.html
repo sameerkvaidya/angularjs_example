@@ -1,0 +1,23 @@
+
+<h3>List Of Items</h3>
+
+<table class="table table-striped table-condensed table-hover table-bordered">
+    
+    <thead>
+    <th><a href="#/new"><i class="icon-plus-sign"></i></a></th>
+        <th>Environment</th>
+        <th>User</th>
+        <th></th>
+        
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in items" id={{item.id}}>
+            
+            <td><a href="#/modify/{{item.id}}"><i class="icon-edit"></i></a></td>
+            <td>{{mySplit(item.name, 0)}} - <a href='{{mySplit(item.name, 1)}}' target="_blank">Link</a></td>
+            <td>{{item.user}}</td>
+            <td><a title="Edit Details" ng-click="delete()"><i class="icon-remove"></i></a></td>
+            
+        </tr>
+    </tbody>
+</table>
